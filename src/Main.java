@@ -40,12 +40,21 @@ public class Main {
         for (int i =1; i <=512; i =i *2 ) System.out.print(i +" ");
     }
     public static void task8() {
+        int salary =29000;
         System.out.println("\n"+"Задача 8");
+        for (int i =1; i <=12; i++ ) System.out.println("Месяц "+i+", сумма накоплений равна "+i*salary+" рублей");
     }
     public static void task9() {
+        int salary =29000;
+        float total =0.0f;
         System.out.println("Задача 9");
+        for (int i =1; i <=12; i++ ) {
+            total = total * 1.01f + salary;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+        }
     }
     public static void task10() {
         System.out.println("Задача 10");
+        for (int i =1; i <=10; i++ ) System.out.println("2 * "+i+" = "+i*2);
     }
 }
